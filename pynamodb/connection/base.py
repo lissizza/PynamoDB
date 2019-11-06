@@ -146,7 +146,7 @@ class MetaTable(object):
 
     def get_index_range_keyname(self, index_name):
         """
-        Returns the name of the hash key for a given index
+        Returns the name of the range key for a given index
         """
         global_indexes = self.data.get(GLOBAL_SECONDARY_INDEXES)
         local_indexes = self.data.get(LOCAL_SECONDARY_INDEXES)
